@@ -2,10 +2,10 @@
 /**
  * main-Entry point of the program
  * Description: A C program that print the output with a double quote at the beginning
- * If successful always return 0
+ * Retur: Always 0 (Success)
  */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle\n");
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
