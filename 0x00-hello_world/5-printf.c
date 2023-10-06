@@ -1,7 +1,7 @@
 #include<stdio.h>
 /***
  * main - Entry point of the program
- * A simple c program that prints a sentence with a comma
+ * Description: A simple c program that prints a sentence with a comma
  * Return: Always 0 (success)
  */
 int main(void)
