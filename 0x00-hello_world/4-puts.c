@@ -2,7 +2,7 @@
 /**
  * main-Entry point of the program
  * Description: A C program that print the output with a double quote at the beginning
- * Retur: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
