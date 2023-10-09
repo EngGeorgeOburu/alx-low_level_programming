@@ -1,8 +1,9 @@
 #include<stdio.h>
-/* main - Entry point for the program */
-
-/* Return: Always 0 (success) */
-
+/**
+ * main - Entry point
+ * Description:printing various sizes of computer types
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 	printf("Size of a char: %lu bytes(s)\n", sizeof(char));
