@@ -1,14 +1,14 @@
 #include<stdio.h>
-/**
- *main - Entry point
- *Description:A function that prints typical data sizes of various data type
- */
+/* main - Entry point for the program */
+
+/* Return: Always 0 (success) */
+
 int main(void)
 {
-	printf("Size of a char: %lu bytes(s)\n", char);
-	printf("Size of an int: %lu bytes(s)\n", int);
-	printf("Size of a long int: %lu byte(s)\n", long int);
-	printf("Size of long long int: %lu byte(s)\n", long long int);
-	printf("Size of a float: %lu byte(s)\n", float);
+	printf("Size of a char: %lu bytes(s)\n", sizeof(char));
+	printf("Size of an int: %lu bytes(s)\n", sizeof(int));
+	printf("Size of a long int: %lu byte(s)\n", sizeof(long int));
+	printf("Size of long long int: %lu byte(s)\n", sizeof(long long int));
+	printf("Size of a float: %lu byte(s)\n", sizeof(float));
 	return (0);
 }
