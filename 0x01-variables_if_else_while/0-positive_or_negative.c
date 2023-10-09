@@ -1,8 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
-/* main - Entry point for the program */
-
-/* This is a program assigning random value to a variable and determines if it is positive and negative */
+#include <stdio.h>
+/**
+ * main - Entry point of exam
+ * Description: program printing a negative or positive number
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 	int n;
@@ -13,14 +16,14 @@ int main(void)
 
 	if (n > 0)
 	{
-		printf(" %d is positive \n", &n);
+		printf(" %d is positive \n", n);
 	}
 	else if (n < 0)
 	{
-		printf(" %d is negative \n", &n);
+		printf(" %d is negative \n", n);
 	}
 	else
 	{
-		printf(" %d is zero \n", &n);
+		printf(" %d is zero \n", n);
 	return (0);
 }
