@@ -1,10 +1,14 @@
 #include <stdio.h>
 #include <unistd.h>
-/* Main - Entry point of the program */
-
-/* Return: Always 1 (success) */
+/**
+ * main - Entry point
+ * Decription: program that calls the write function
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-	write("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	char qu[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+
+	write(1, qu, 59)
 	return (1);
 }
