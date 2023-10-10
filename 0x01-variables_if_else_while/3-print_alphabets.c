@@ -1,17 +1,14 @@
 #include <stdio.h>
-/*  main - Entry point of the program */
-
-/* Returet : Always 0 (success) */
-
+/**
+ * main - Entry point of the program
+ * Description: program prints lowercase alphabets
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 	char c;
 
 	for (c = 'a'; c <= 'z'; c++)
-	{
-		putchar(c);
-	}
-	while (c = 'A' && c <= 'Z')
 	{
 		putchar(c);
 	}
