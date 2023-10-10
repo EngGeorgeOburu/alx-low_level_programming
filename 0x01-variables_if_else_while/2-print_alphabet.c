@@ -1,7 +1,9 @@
 #include <stdio.h>
-/* main - entry of the program */
-
-/* Result:Always 0 (success) */
+/**
+ * main - entry point 
+ * Description: program that prints lowercase alphabets
+ * Return:Always 0 (success)
+ */
 int main(void)
 {
 	char c;
@@ -10,5 +12,6 @@ int main(void)
 	{
 		putchar(c);
 	}
+	putchar('\n');
 	return (0);
 }
