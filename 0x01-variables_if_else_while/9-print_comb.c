@@ -1,9 +1,9 @@
 #include <stdio.h>
-/* main - Entry point of the program */
-
-/* Description: A program that prints possible combination of single-digit numbers */
-
-/* Return:  Always 0 (success) */
+/**
+ * main - Entry point of the program
+ * Description:program printing combination of single digit numbers
+ * Return:Always 0 (success)
+ */
 int main(void)
 {
 	int i;
@@ -17,6 +17,6 @@ int main(void)
 			 putchar(' ');
 			}
 		}
-
+	putchar('\n');
 	return (0);
 }
