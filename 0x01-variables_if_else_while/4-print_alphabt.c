@@ -1,7 +1,9 @@
 #include <stdio.h>
-/* main -Entry point of the program */
-
-/* Return: Always 0 (success) */
+/**
+ * main - Entry point of the program
+ * Description: program prints letters except q and e
+ * Return:Always 0 (success)
+ */
 int main(void)
 {
 	char c;
@@ -13,7 +15,7 @@ int main(void)
 			continue;
 		}
 		putchar(c);
-		putchar('\n');
 	}
+	putchar('\n');
 	return (0);
 }
