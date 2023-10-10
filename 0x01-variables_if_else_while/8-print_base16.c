@@ -1,9 +1,9 @@
 #include <stdio.h>
-/* main - Entry point of the program */
-
-/* Description: A program that prints all the numbers of base 16 in lowercase */
-
-/* Return: Always 0 (success) */
+/**
+ * main - Entry point of the program
+ * Description:program pprinting all base 16 lowercase
+ * Return:Always 0 (success)
+ */
 int main(void)
 {
 	int i;
