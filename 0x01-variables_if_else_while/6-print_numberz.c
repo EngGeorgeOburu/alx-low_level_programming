@@ -1,7 +1,9 @@
 #include <stdio.h>
-/* main - Entry point of the program */
-
-/* Results:Always (0) */
+/**
+ * main - Entry point of the program
+ * Description:Program printing single digit numbers
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 	int i;
@@ -10,5 +12,6 @@ int main(void)
 	{
 	putchar(i + '0');
 	}
+	putchar('\n');
 	return (0);
 }
