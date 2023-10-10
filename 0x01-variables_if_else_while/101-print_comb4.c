@@ -1,12 +1,12 @@
 #include <stdio.h>
-/* Main - Entry point of the program */
-
-/* Description: A program that prints a combination of three digits */
-
-/* Return: Always 0 (success) */
+/**
+ * main - Entry point of the program
+ * Description:program printing a combination of three digits
+ * Return:Always 0 (success)
+ */
 int main(void)
 {
-	int num1, num2, num3;
+	int num1, num2, num3, i;
 		for (num1 = 0; num1 < 10; num1++)
 		{
 			for (num2 = 0; num2 < 10; num2++)
