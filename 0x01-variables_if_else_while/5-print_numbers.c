@@ -2,7 +2,8 @@
 /**
  * main - Entry point of the program
  * Description:program printing single digit nu,bers
- * Return:Always 0 (success)**/
+ * Return:Always 0 (success)
+ */
 int main(void)
 {
 	int i;
