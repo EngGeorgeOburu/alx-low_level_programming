@@ -1,7 +1,9 @@
 #include <stdio.h>
-/* main - Entry point of program */
-
-/* Return:Always 0 (success) */
+/**
+ * main - Entry point of the program
+ * Description:program printing lower case in reverse
+ * Return:Always 0 (success)
+ */
 int main(void)
 {
 	char c;
@@ -10,5 +12,6 @@ int main(void)
 	{
 		putchar(c);
 	}
+	putchar('\n');
 	return (0);
 }
