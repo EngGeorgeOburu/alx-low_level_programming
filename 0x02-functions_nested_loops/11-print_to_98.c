@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main -Entry point of the program
  * Description:program natural  numbers from n to 98
