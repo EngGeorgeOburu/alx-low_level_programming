@@ -7,11 +7,11 @@ void print_alphabet_x10(void)
 	char i;
 	int n;
 
-	for (i = 'a';i <= 'z';i++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		for (n = 0;n <10;n++)
+		for (n = 0; n < 10; n++)
 		{
-			putchar(i);
+			_putchar(i);
 		}
 		putchar('\n');
 	}
