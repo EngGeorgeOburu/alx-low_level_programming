@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * Description:program checks the alphabet character
- * the chracter being is c
+ * _isalpha:program checks the alphabet character
+ * @c:the characcter being is c
  *
  * Return:Always 1 (success)
  */
