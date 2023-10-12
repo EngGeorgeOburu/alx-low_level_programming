@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <main.h>
 /**
  * main - Entry of the program
