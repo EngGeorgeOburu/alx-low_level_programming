@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * main - Entry point of the program
- * print_triangle:prints a triangle
+ * print_triangle - The function prints a triangle.
+ *
+ * @size: indicates the size of the triangle.
  */
 void print_triangle(int size)
 {
@@ -22,8 +23,8 @@ void print_triangle(int size)
 			for (p = 1; p <= size; p++)
 			{
 				_putchar('#');
+			}
 			_putchar('\n');
 		}
 	}
-}
 }
