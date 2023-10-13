@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * main - Entry point 
- * print_diagonal: draws a diaognal line on the terminal
- * Return: Always 0 (success)
+ *  print_diagonal - The function draws a diaognal line on the terminal.
+ *
+ * @n: The number of times the \ is printed.
+ *
+ * Return: Always 0 (success).
  */
 void print_diagonal(int n)
 {
@@ -13,13 +15,12 @@ void print_diagonal(int n)
 	else
 	{
 		int m, p;
-		
 		for (m = 0; m < n; m++)
-	{
+		{
 		for (p = 0; p < n; p++)
 		{
 			if (m == p)
-				_putchar('\');
+				_putchar('\\');
 			else if (p < m)
 				_putchar(' ');
 		}
