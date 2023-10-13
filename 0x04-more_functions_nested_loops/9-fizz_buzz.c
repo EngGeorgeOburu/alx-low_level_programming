@@ -18,7 +18,7 @@ int main(void)
 		}
 		else if (num % 3 && num % 5 == 0)
 		{
-			printf("FizzBuzz")
+			printf("FizzBuzz");
 		}
 		else if (num == 1)
 		{
@@ -29,7 +29,7 @@ int main(void)
 			printf("%d",num);
 		}
 	}
-	printff("\n");
+	printf("\n");
 	return (0);
 }
 
