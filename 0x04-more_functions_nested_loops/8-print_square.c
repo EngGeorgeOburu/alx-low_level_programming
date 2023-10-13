@@ -1,7 +1,9 @@
 #include "main.h"
 /**
- * main - Entry point of the program
- * print_square:prints a square
+ * print_square - The function prints a square.
+ *
+ * @size: The size of the square.
+ *
  * Return:Always 0 (success)
  */
 void print_square(int size)
@@ -13,6 +15,7 @@ void print_square(int size)
 	else
 	{
 		int m, p;
+
 		for (m = 0; m < size; m++)
 		{
 			for (p = 0; p < size; p++)
