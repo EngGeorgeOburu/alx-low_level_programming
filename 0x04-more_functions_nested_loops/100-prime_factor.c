@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 /**
- * Description:prints the largest prime factor of a number.
+ * 100-prime_factor - prints the largest prime factor of a number.
  *
  * Return:Always 0 (success).
  */
