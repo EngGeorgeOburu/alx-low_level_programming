@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-/*
- * main - Entry of the program.
- *
+/**
  * Description:prints the largest prime factor of a number.
  *
  * Return:Always 0 (success).
