@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - Entry point of the program.
+ *_puts -  This function prints a string.
  *
- * void_puts -  This function prints a string.
- */
+ *@str: string.
+ * /
 void _puts(char *str)
 {
 	while (*str != '\0')
