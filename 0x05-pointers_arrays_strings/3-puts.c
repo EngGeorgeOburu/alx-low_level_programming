@@ -1,10 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *_puts -  This function prints a string.
+ * _puts - function parameter.
  *
- *@str: string.
- * /
+ * @str: string.
+ *
+ * Return: Always 0 (success).
+ */
 void _puts(char *str)
 {
 	while (*str != '\0')
