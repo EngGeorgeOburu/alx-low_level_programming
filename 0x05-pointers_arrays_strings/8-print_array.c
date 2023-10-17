@@ -1,10 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * void print_arrays_string - The function prints n element
+ * print_array - The function prints n element of an array of interger.
  *
- * of an array of intergs
+ * @a: The array name.
  *
+ * @n: The number of elements in an array to be printed.
  */
 void print_array(int *a, int n)
 {
