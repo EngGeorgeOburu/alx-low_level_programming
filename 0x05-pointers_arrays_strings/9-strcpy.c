@@ -2,17 +2,24 @@
 #include <string.h>
 /**
  * char *_strcpy - The functions copies the string pointed to by src.
+ * 
+ * @src: Copies string from.
  *
+ * @dest: Copies to
  * **/
 char *_strcpy(char *dest, char *src)
 {
-	char *dest_start = dest;
+	int i = 0;
+	int n = 0;
 
-	while (*src != '\0')
+	while (*(src + i) != '\0')
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		i++;
 	}
-	_putchar('\n');
+	for (;x < i; x++)
+	{
+		dest[n] = src[n];
+	}
+	dest[i] = '\0';
+	return (dest);
 }
