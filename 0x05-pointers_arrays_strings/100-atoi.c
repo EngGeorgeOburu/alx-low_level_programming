@@ -14,12 +14,12 @@ int _atoi(char *s)
 	{
 		if (s[i] == '-')
 			++j;
-		if (s[i] >= '0' && s[i] <='9')
+		if (s[i] >= '0' && s[i] <= '9')
 		{
 			digit = s[i] - '0';
 			if (j % 2)
-				digit =- digit;
-			k = k*10 + digit;
+				digit = - digit;
+			k = k * 10 + digit;
 			f = 1;
 			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
