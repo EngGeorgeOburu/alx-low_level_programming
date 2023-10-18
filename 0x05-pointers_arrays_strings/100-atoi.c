@@ -18,7 +18,7 @@ int _atoi(char *s)
 		{
 			digit = s[i] - '0';
 			if (j % 2)
-				digit = - digit;
+				digit = -digit;
 			k = k * 10 + digit;
 			f = 1;
 			if (s[i + 1] < '0' || s[i + 1] > '9')
