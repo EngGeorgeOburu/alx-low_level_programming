@@ -3,6 +3,7 @@
 /**
  * *cap_string - The function capitalizes all words in a string.
  * @str: string parameter.
+ * Return:Pointer.
  */
 char *cap_string(char *str)
 {
@@ -13,7 +14,7 @@ char *cap_string(char *str)
 	{
 		if (isalpha(str[i]))
 		{
-			if(cap_next || i == 0)
+			if (cap_next || i == 0)
 			{
 				str[i] = toupper(str[i]);
 			}
@@ -22,7 +23,7 @@ char *cap_string(char *str)
 				str[i] = tolower(str[i]);
 			}
 			cap_next = 0;
-		else if (isspace(str[i]) || ispunct(str[i]))
+			else if (isspace(str[i]) || ispunct(str[i]))
 			{
 				cap_next = 1;
 			}

@@ -4,8 +4,9 @@
  * _strcmp - The function compares two string.
  * @s1: String parameter.
  * @s2: string parameter.
+ * Return:dest.
  */
-int _strcmp(char *s1,char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	while (*s2 == *s1)
 	{
