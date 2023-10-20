@@ -1,9 +1,11 @@
 #include "main.h"
 #include <string.h>
 /**
- * *_strncpy - The function copies a string.
+ * _strncpy - The function copies a string.
  * @dest: string parameter.
  * @src: string parameter.
+ * @n: An interger number.
+ * Return:dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
