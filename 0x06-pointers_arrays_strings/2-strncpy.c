@@ -9,6 +9,8 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
+	char *dest_start_point = dest;
+
 	while (*src != '\0' && n > 0)
 	{
 		*dest = *src;
@@ -22,5 +24,5 @@ char *_strncpy(char *dest, char *src, int n)
 		dest++;
 		n--;
 	}
-	return (dest);
+	return (dest_start_point);
 }
