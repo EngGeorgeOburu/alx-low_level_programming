@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdio.h>
 /**
  * main - Entry poitn of the program
@@ -17,4 +18,17 @@ void print_alphabet(void)
 		putchar(c);
 	}
 	putchar('\n');
+=======
+#include "main.h"
+/**
+ * print-alphabet - prints all alphabets in lower case
+ */
+void print_alphabet(void)
+{
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+		_putchar(c);
+	_putchar('\n');
+>>>>>>> origin/master
 }

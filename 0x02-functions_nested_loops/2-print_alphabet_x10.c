@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdio.h>
 /**
  * main - Entry point of the program
@@ -8,10 +9,17 @@ int main()
 {
 	print_alphabet_x10();
 }
+=======
+#include "main.h"
+/**
+ * print_alphabet_x10:prints 10x alphabets in lower case
+ */
+>>>>>>> origin/master
 void print_alphabet_x10(void)
 {
 	char i;
 	int n;
+<<<<<<< HEAD
 	for (i = 'a';i <= 'z';i++)
 	{
 		for (n = 0; n < 10; n++)
@@ -19,5 +27,15 @@ void print_alphabet_x10(void)
 			putchar(i);
 		}
 		putchar('\n');
+=======
+
+	for (i = 'a'; i <= 'z'; i++)
+	{
+		for (n = 0; n < 10; n++)
+		{
+			_putchar(i);
+		}
+		_putchar('\n');
+>>>>>>> origin/master
 	}
 }
