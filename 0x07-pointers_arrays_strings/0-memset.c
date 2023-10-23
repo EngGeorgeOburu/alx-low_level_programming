@@ -7,9 +7,9 @@
  * @n: bytes to fill.
  * Return: POinter to memory
  */
-char *_memset(char*s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
-	n  =  strlen(s)+1;
+	n  =  strlen(s) + 1;
 	memset(s, b, n);
 	return (s);
 }
