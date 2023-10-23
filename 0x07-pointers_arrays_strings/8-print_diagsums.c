@@ -7,11 +7,13 @@
  */
 void print_diagsums(int *a,int size)
 {
-	int major_diag = 0;
-	int minor_diag = 0;
-	int i, j;
-	int size = 3;
+	int total_minor = 0;
+	int total_major = 0;
+	int i;
 
 	for (i = 0; i < size; i++)
 	{
-	for (	
+		total_minor += a[i * size + i];
+		total_major += a[(size -1 -i) * size + i];
+	}
+
