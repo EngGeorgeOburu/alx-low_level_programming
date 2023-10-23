@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  * print_chessboard - The function prints chessboard table.
+ * @a: Matrix that prints chessbaord.
  */
 void print_chessboard(char (*a)[8])
 {
