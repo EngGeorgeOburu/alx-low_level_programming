@@ -4,11 +4,12 @@
  * _strpbrk - Searches a string for a set of bytes.
  * @s: string parameter.
  * @accept: bytes being searched.
+ * Return: search.
  */
 char *_strpbrk(char *s, char *accept)
 {
 	char *search;
 
-	search = strpbrk(s,accept);
+	search = strpbrk(s, accept);
 	return (search);
 }

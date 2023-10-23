@@ -4,6 +4,7 @@
  * _strchr - Function locates a character in a string.
  * @s: string used to find the character.
  * @c: character beig searched.
+ * Return: find.
  */
 char *_strchr(char *s, char c)
 {
