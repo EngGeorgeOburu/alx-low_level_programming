@@ -7,6 +7,7 @@
  */
 void print_diagsums(int *a, int size)
 {
+<<<<<<< HEAD
 	int total_minor = 0;
 	int total_major = 0;
 	int i;
@@ -17,3 +18,17 @@ void print_diagsums(int *a, int size)
 		total_major += a[(size - 1 - i) * size + i];
 	}
 }
+=======
+	int sum_major = 0;
+	int sum_minor = 0;
+	int i;
+	
+	for (i = 0; i < size; i++)
+	{
+	sum_major += a[i * size + i];
+	sum_minor += a[(size - 1 -i) * size + i];
+	}
+	printf("%d",sum_major);
+	printf("%d",sum_minor);
+}	
+>>>>>>> 0c95bc0 (pointers,arrays,strings)
