@@ -6,7 +6,7 @@
  */
 int is_prime_number(int n)
 {
-	int factor;
+	int factor = 0;
 
 	if (n <= 1)
 	{
@@ -16,7 +16,7 @@ int is_prime_number(int n)
 	{
 		return (1);
 	}
-	if (factor * factor > n)
+	if ((int)(factor * factor > n))
 	{
 		return (1);
 	}
