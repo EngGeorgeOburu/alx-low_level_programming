@@ -4,6 +4,7 @@
  * wildcmp - Compares two string.
  * @s1: First string parameter.
  * @s2: Second string parameter.
+ * Return: String length.
  */
 int wildcmp(char *s1, char *s2)
 {
