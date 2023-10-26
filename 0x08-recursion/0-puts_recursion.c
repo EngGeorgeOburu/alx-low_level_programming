@@ -2,7 +2,6 @@
 /**
  * _puts_recursion - prints a string.
  * @s: character string to be printed.
- * @num: variable to store numerical value.
  */
 void _puts_recursion(char *s)
 {
