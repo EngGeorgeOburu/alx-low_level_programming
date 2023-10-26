@@ -6,9 +6,9 @@
  */
 int _sqrt_recursion(int n)
 {
-	int numb;
-
-	if (numb * numb >  n)
+	int numb = 1;
+	
+	if (numb * numb > n)
 	{
 		return (-1);
 	}
@@ -16,5 +16,6 @@ int _sqrt_recursion(int n)
 	{
 		return (numb);
 	}
-	return (_sqrt_recursion (numb);
+	numb++;
+	return (_sqrt_recursion(n));
 }
