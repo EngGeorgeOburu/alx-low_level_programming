@@ -3,8 +3,9 @@
 #include <stdlib.h>
 /**
  * str_concat - Function concatenates two strings.
- * @str1:First string parameter.
- * @str2:Second string parameter.
+ * @s1:First string parameter.
+ * @s2:Second string parameter.
+ * Return s3
  */
 char *str_concat(char *s1, char *s2)
 {

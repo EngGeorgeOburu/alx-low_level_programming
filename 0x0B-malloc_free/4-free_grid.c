@@ -5,11 +5,11 @@
  * free_grid - This frees 2D grid.
  * @grid: 2D matrix
  * @height: input parameter
- * Return 0 (success)
+ * Return: Nothing.
  */
 void free_grid(int **grid, int height)
 {
-       	int i;
+	int i;
 
 	if (grid == NULL || height <= 0)
 	{

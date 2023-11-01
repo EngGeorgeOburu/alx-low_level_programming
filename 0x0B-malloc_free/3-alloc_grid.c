@@ -4,6 +4,7 @@
  * alloc_grid - Function that returns 2D array of intgers.
  * @width: First input parameter
  * @height: Second input parameter
+ * Return: Matrix
  */
 int **alloc_grid(int width, int height)
 {
@@ -14,7 +15,7 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	matrix = malloc(width *sizeof(int));
+	matrix = malloc(width * sizeof(int));
 
 	if (matrix == NULL)
 	{
@@ -22,7 +23,7 @@ int **alloc_grid(int width, int height)
 	}
 	for (i = 0; i < width; i++)
 	{
-		matrix[i] = malloc(height *sizeof(int));
+		matrix[i] = malloc(height * sizeof(int));
 		if (matrix[i] == NULL)
 		{
 			for (j = 0; j < i; j++)
