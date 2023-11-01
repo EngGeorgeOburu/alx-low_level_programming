@@ -4,11 +4,13 @@
 /**
  * _strdup - Function returns a pointer to a newly located place in memory.
  * @str: String parameter used.
- * @updated_str: Second string parameter.
+ * @updated_str: character string.
+ * Return updated_str.
  */
 char *_strdup(char *str)
 {
 	char *updated_str;
+	
 	if (str == NULL)
 	{
 		return (NULL);
@@ -18,6 +20,6 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	strcpy(updated_str,str);
+	strcpy(updated_str, str);
 	return (updated_str);
 }
