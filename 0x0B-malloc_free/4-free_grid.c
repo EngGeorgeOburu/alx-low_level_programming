@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stddef.h>
 /**
  * free_grid - This frees 2D grid.
  * @grid: 2D matrix
@@ -7,15 +9,15 @@
  */
 void free_grid(int **grid, int height)
 {
-	int i;
+       	int i;
 
-	if (grid <= 0 || height <= 0)
+	if (grid == NULL || height <= 0)
 	{
-		return (NULL);
+		return;
 	}
 	for (i = 0; i < height; i++)
 	{
-		free(grid);
+		free(grid[i]);
 	}
 	free(grid);
 }
