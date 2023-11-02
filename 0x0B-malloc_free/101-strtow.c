@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 /**
  * strtow - Function split strings into words
  * @i: interger variable
@@ -12,7 +13,7 @@ char **strtow(char *str)
 	int i = 0;
 	char **word = malloc(sizeof(char *) *100);
 
-	if (str == NULL || str == "")
+	if (str == NULL || strcmp(str, "") == 0)
 	{
 		return (NULL);
 	}
@@ -27,8 +28,8 @@ char **strtow(char *str)
 	}
 	for (; word != NULL; i++)
 	{
-		word[i] = word;
-		word = strtok(NULL, " ");
+		word[i] = * word;
+		word = strtow(NULL);
 	}
 	word[i] = NULL;
 	return (word);
