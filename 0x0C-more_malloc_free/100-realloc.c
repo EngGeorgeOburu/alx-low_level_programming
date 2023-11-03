@@ -4,7 +4,10 @@
 #include <string.h>
 /**
  * _realloc - reallocates memory block using malloc and free
- * @p: allocating memory to new size
+ * @ptr: POinter to memory
+ * @old_size: bytes allocated for ptr space
+ * @new_size: bytes of the new memory block
+ *
  * Return: Nothing
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
@@ -14,7 +17,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	p = malloc(new_size);
 	if (new_size > old_size)
 	{
-		return;
+		return (malloc (new_size));
 	}
 	if (new_size == old_size)
 	{
@@ -33,7 +36,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	{
 		size_t least_size = (old_size < new_size);
 
-		memcpy(p, new_size, least_size);
+		memcpy(p, ptr, least_size);
 		free(ptr);
 	}
 	return (p);
