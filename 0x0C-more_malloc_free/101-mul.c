@@ -7,7 +7,7 @@
  * @argv: an array of command line arguments
  * Return: Nothing
  */
-int main(int argc, char * argv[])
+int main(int argc, char *argv[])
 {
 	int first_num = atoi(argv[1]);
 	int second_num = atoi(argv[2]);
