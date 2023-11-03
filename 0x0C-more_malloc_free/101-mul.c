@@ -3,7 +3,10 @@
 #include <stdlib.h>
 /**
  * main - Entry point of the program
- * **/
+ * @argc: Command line arguments
+ * @argv: an array of command line arguments
+ * Return: Nothing
+ */
 int main(int argc, char * argv[])
 {
 	int first_num = atoi(argv[1]);
