@@ -11,7 +11,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int total = nmemb * size;
-	char * array = malloc(total);
+	char *array = malloc(total);
 
 	while (array == NULL)
 	{
