@@ -4,9 +4,9 @@
 #include <string.h>
 /**
  * _calloc - Allocates memory for an array using malloc.
- * @total: Total size of bytes
- * @array: The array allocating memory to
- * Return: Array
+ * @nmemb: number of elements in array
+ * @size: Size of each element in an array
+ * Return: Array or NULL on failure
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
