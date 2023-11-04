@@ -4,8 +4,7 @@
 /**
  * _strdup - Function returns a pointer to a newly located place in memory.
  * @str: String parameter used.
- * @updated_str: character string.
- * Return updated_str.
+ * Return: updated_str.
  */
 char *_strdup(char *str)
 {
