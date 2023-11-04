@@ -9,7 +9,6 @@
 char *_strdup(char *str)
 {
 	char *updated_str;
-	
 	if (str == NULL)
 	{
 		return (NULL);
