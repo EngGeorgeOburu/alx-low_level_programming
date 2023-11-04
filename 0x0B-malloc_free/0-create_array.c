@@ -5,12 +5,13 @@
  * create_array - The function create an array of chars.
  * @size: Input paramater.
  * @c: Charater parameter.
- * Return. Array.
+ * Return. A pointer to the new array,
+ * or NULL if there is an error.
  */
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
-	char * array = malloc(size * sizeof(char));
+	char * array = malloc(size *sizeof(char));
 
 	if (size == 0 && array == NULL)
 	{
