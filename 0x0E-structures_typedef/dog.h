@@ -7,7 +7,8 @@
  * @owner: Dog's owner
  * dog_t - This is typedef for struct dog
  */
-struct dog {
+struct dog
+{
 	char *name;
 	float age;
 	char *owner;
