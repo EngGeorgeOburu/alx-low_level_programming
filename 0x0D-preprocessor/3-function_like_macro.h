@@ -1,19 +1,7 @@
 #include <stdio.h>
-/**
- * ABS - computes the absolute value
- * Return: Nothing
- */
-int ABS(x)
-{
-	int y;
+#ifndef function_like_macro_h
+#define function_like_macro_h
 
-	if (x >= 0)
-	{
-		y = x;
-	}
-	else
-	{
-		y = -x;
-	}
-	return (0);
-}
+#define ABS(x) ((x) < (0)?-(x) : (x))
+
+#endif
