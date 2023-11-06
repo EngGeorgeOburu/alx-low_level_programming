@@ -5,11 +5,13 @@
  * new_dog - Creates the new dog
  * @name: Name of the dog
  * @age: Dogs age
+ * Return: newdog
  * @owner: Dog;s owner
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *newdog = malloc(sizeof(dog_t));
+
 	if (!name || !owner)
 	{
 		return (NULL);
@@ -19,7 +21,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	newdog->owner = strdup(owner);
-	
 	if (!newdog)
 	{
 	free(newdog->name);
@@ -27,6 +28,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	return (NULL);
 	}
 	newdog->age = age;
-	
 	return (newdog);
-}	
+}

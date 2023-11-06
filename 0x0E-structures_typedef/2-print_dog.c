@@ -2,6 +2,7 @@
 #include "dog.h"
 /**
  * print_dog - prints struct dog
+ * @d: Dog structure to initialize
  * Return: Nothing
  */
 void print_dog(struct dog *d)
