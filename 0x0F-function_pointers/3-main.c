@@ -1,12 +1,17 @@
 #include <stdio.h>
-#include "main.h"
-#include "calc.h"
-/****/
-int main (int argc, char argv[])
+/**
+ * main - Entry point of the program
+ * @argc: arguments passed in
+ * @argv: an array of arguments
+ * @num1: First number passed
+ * @num2: Second number passed
+ * @operator: The pointer array
+ * Return: Nothing**/
+int main (int argc, char *argv[])
 {
 	char *operator = argv[2];
-	num1 = atoi(argv[1];
-	num2 = atoi(argv[3];
+	int num1 = atoi(argv[1]);
+	int num2 = atoi(argv[3]);
 	int results;
 
 	if (argc != 4)
@@ -14,7 +19,7 @@ int main (int argc, char argv[])
 		printf("Error\n");
 		return (98);
 	}
-	int (*op_func)(int, int) = get_op_func(operator);
+	int (*op_func)(int, int) = op_func(char *operator);
 	if (!op_func)
 	{
 		printf("Error\n");
