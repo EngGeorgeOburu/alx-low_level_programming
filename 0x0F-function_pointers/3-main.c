@@ -18,7 +18,7 @@ int main (int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
 	num1 = atoi(argv[1]);
 	operator = argv[2];
@@ -29,7 +29,7 @@ int main (int argc, char *argv[])
 	if (!op_func)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 	results = op_func(num1, num2);
 	printf("%d\n", results);
