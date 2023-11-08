@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - Entry point of the program
  * @argc: arguments passed in
@@ -9,21 +10,26 @@
  * Return: Nothing**/
 int main (int argc, char *argv[])
 {
-	char *operator = argv[2];
-	int num1 = atoi(argv[1]);
-	int num2 = atoi(argv[3]);
+	char *operator;
+	int num1;
+	int num2;
 	int results;
 
 	if (argc != 4)
 	{
 		printf("Error\n");
-		return (98);
+		exit (98);
 	}
-	int (*op_func)(int, int) = op_func(char *operator);
+	num1 = atoi(argv[1]);
+	operator = argv[2];
+	num2 = atoi(argv[3]);
+
+	int (*op_func)(int, int) = op_func(operator);
+
 	if (!op_func)
 	{
 		printf("Error\n");
-		return (99);
+		exit (99);
 	}
 	results = op_func(num1, num2);
 	printf("%d\n", results);
