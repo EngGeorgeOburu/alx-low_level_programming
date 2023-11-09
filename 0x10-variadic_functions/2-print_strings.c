@@ -4,7 +4,8 @@
 #include <stddef.h>
 /**
  * print_strings - The function prints string
- * n: Number of strings
+ * @n: Number of strings
+ * @separator: String parameter
  * Return: Nothing
  */
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -31,6 +32,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 		}
 		va_end(args);
-		printf("\n");
 	}
+	printf("\n");
 }
