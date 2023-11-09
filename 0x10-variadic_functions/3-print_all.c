@@ -4,21 +4,21 @@
 #include <string.h>
 #include <stdarg.h>
 /**
- *print_all - prints anything
- @format: format string with format specifies
+ * print_all - prints anything
+ * @format: format string with format specifiers
  */
 void print_all(const char *const format, ...)
 {
 	va_list args;
 	size_t i;
 	char *str;
-	va_start(args, format);
 
+	va_start(args, format);
 	while (format != NULL && format[i] != '\0')
 	{
 		if (i > 0)
 			printf(", ");
-		while (strchr ("cifs", format[i]  != '\0'))
+		while (strchr("cifs", format[i]  != '\0'))
 		{
 			switch (format[i])
 			{
