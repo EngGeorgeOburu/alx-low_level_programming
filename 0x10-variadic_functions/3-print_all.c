@@ -30,19 +30,17 @@ void print_all(const char *const format, ...)
 			case 'f':
 				printf("%f", va_arg(args, double));
 				break;
-			}
-		if (str == NULL)
-		{
-			str = va_arg(args, char *);
-			if (str == NULL)
-			{
+			case 's':
+				str = va_arg(args, char *);
+				if (str == NULL)
+				{
 				str = "nil";
+				}
 				printf("%s", str);
-			}
 		}
 		i++;
 	}
-	va_end(args);
 	}
+	va_end(args);
 	printf("\n");
 }
