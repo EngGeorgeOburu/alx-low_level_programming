@@ -10,7 +10,7 @@
 void print_all(const char *const format, ...)
 {
 	va_list args;
-	size_t i;
+	size_t i = 0;
 	char *str;
 
 	va_start(args, format);
@@ -18,7 +18,6 @@ void print_all(const char *const format, ...)
 	{
 		if (i > 0)
 			printf(", ");
-		while (strchr("cifs", format[i]  != '\0'))
 		{
 			switch (format[i])
 			{
@@ -42,7 +41,6 @@ void print_all(const char *const format, ...)
 			}
 		}
 		i++;
-		break;
 	}
 	va_end(args);
 	printf("\n");
