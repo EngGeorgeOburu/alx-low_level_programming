@@ -2,6 +2,7 @@
 #include "function_pointers.h"
 #include <stdlib.h>
 /**
+ * main - Entry point of the game
  * @argc - argument to pass
  * @argv - array of argument
  */
@@ -22,6 +23,7 @@ int main(int argc, char *argv[])
 		return (2);
 	}
 	int i = 0;
+
 	while (i < bytes)
 	{
 		if (i == bytes - 1)
@@ -31,10 +33,10 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
-			printf("%02hhx ",array[i]);
+			printf("%02hhx ", array[i]);
 		}
 		i++;
 	}
-	free (array);
+	free(array);
 	return (0);
 }
