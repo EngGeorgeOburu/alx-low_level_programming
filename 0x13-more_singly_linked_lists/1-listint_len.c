@@ -9,6 +9,7 @@
 size_t listint_len(const listint_t *h)
 {
 	size_t total_nodes = 0;
+	
 	while (h != NULL)
 	{
 		printf("%d", h->n);
