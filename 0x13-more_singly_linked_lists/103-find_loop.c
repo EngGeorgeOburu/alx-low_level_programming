@@ -4,6 +4,7 @@
 /**
  * find_listint_loop - Finds the loop in a linked list
  * @head: pointer to the head pointer of the list
+ * Return: Nothing
  */
 listint_t *find_listint_loop(listint_t *head)
 {
@@ -20,7 +21,7 @@ listint_t *find_listint_loop(listint_t *head)
 
 		while (tortoise != hare)
 		{
-			tortoise = tortoise ->next;
+			tortoise = tortoise->next;
 			hare = hare->next;
 		}
 		return (tortoise);
