@@ -9,16 +9,15 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	int bit_count = 0;
-	int position = 63;
+	int pos = 63;
 	unsigned long int xor_result = n ^ m;
 
-	while (position >= 0)
+	while (pos >= 0)
 	{
-		unsigned long int current_bit = xor_result >> position;;
-		
+		unsigned long int current_bit = xor_result >> pos;
 		if (current_bit & 1)
 			bit_count++;
-		position--;
+		pos--;
 	}
 	return (bit_count);
 }

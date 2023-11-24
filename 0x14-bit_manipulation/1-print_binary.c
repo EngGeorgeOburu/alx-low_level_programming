@@ -9,7 +9,7 @@
 void print_binary(unsigned long int n)
 {
 	int i = 0;
-	char binary_string[];
+	char binary_string[63];
 
 	if (n == 0)
 		return;
@@ -23,6 +23,6 @@ void print_binary(unsigned long int n)
 		n = n >> 1;
 	}
 	binary_string[i] = '\0';
-	strrev(binary_string);
+	strsep(binary_string);
 	printf("%s\n", binary_string);
 }
