@@ -8,16 +8,13 @@
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *new_node;
-	
 	/* Allacote memory for the new node */
 	new_node = malloc(sizeof(dlistint_t));
 	if (new_node == NULL)
 		return (NULL);
-	
 	/* Initialize the newnode with the provided value */
 	new_node->n = n;
 	new_node->next = NULL;
-	
 	/* If the list is empty, set the new node to head */
 	if (*head == NULL)
 	{
@@ -25,7 +22,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		(*head)->next = new_node;
 		return (new_node);
 	}
-	
 	/* Traverse the list using temp to the last node  */
 	while ((*head)->next != NULL)
 	{
@@ -36,4 +32,3 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	
 	return (new_node);
 }
-	
