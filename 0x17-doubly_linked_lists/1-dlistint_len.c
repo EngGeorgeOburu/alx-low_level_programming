@@ -8,7 +8,6 @@ size_t dlistint_len(const dlistint_t *h)
 {
 	/* Initialize a variable to count the number of nodes */
 	size_t node_count = 0;
-	
 	/* Traverse the list until the end is reached */
 	while (h)
 	{
