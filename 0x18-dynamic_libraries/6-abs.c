@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * Description - Program that computes the absolute value
- *@_abs - Function parameter
+ *_abs - Function parameter
  *@i: Value comp
  * Return:Always the absolute value of int
  */
