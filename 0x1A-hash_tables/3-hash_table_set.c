@@ -10,7 +10,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *new_node, *current_node;
 	unsigned long int index;
-	
 	/* Check if hash table or key or value is NULL or key is empty string*/
 	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 		return (0);
