@@ -8,7 +8,7 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-       	hash_node_t *new_node, *current_node;
+	hash_node_t *new_node, *current_node;
 	unsigned long int index;
 	
 	/* Check if hash table or key or value is NULL or key is empty string*/
@@ -29,7 +29,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			return (1);
 		}
 		current_node = current_node->next;
-    }
+	}
 	/* If no collision, create a new node and add it to the list*/
 	new_node = malloc(sizeof(hash_node_t));
 	if (new_node == NULL)
@@ -49,6 +49,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	new_node->next = ht->array[index];
 	ht->array[index] = new_node;
-	
 	return (1);
 }
