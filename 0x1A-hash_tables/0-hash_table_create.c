@@ -8,12 +8,12 @@ hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *ht = NULL;/* Pointer to the hash table */
 	unsigned long int i;
-	
+
 	ht = malloc(sizeof(hash_table_t));/* Allocate memory for hash tables*/
 	if (ht == NULL)
 		return (NULL);/*Return NULL if malloc fails*/
-	ht->array = malloc(sizeof(hash_table_t *) * size);/*Alocate memeory\
-							    for the array*/
+	/*Allocate memory for the array*/
+	ht->array = malloc(sizeof(hash_table_t *) * size);
 	if (ht->array == NULL)
 	{
 		free(ht);/*free previosly allocated memory*/
